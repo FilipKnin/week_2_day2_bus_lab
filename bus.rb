@@ -17,8 +17,10 @@ def how_many_passengers()
 end
 
 def pick_up(passenger)
+@passengers.push(passenger)
+end
 
-  @passengers.push(passenger)
-
+def drop_off(passenger)
+  @passengers.delete(passenger)
 end
 end

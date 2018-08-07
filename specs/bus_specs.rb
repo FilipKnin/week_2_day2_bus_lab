@@ -27,8 +27,14 @@ class BusTest < MiniTest::Test
   end
 
   def test_pick_up
-    @bus.pick_up(@passenger1) 
+    @bus.pick_up(@passenger1)
     assert_equal([@passenger1], @bus.passengers)
+  end
+
+  def test_drop_off
+    @bus.pick_up(@passenger1)
+    @bus.drop_off(@passenger1)
+    assert_equal([], @bus.passengers)  
 
   end
 

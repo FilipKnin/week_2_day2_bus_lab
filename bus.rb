@@ -27,4 +27,9 @@ end
 def remove_all()
   @passengers = []
 end
+
+def pick_from_stop(bus_stop)
+  @passengers += bus_stop.queue
+  bus_stop.queue = []
+end
 end

@@ -23,4 +23,8 @@ end
 def drop_off(passenger)
   @passengers.delete(passenger)
 end
+
+def remove_all()
+  @passengers = []
+end
 end

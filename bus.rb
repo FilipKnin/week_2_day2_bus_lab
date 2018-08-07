@@ -8,5 +8,10 @@ def initialize(number, destination)
   @passengers = []
 end
 
+def drive()
+
+  return "Brum brum"
+
+end
 
 end

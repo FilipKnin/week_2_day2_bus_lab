@@ -1,6 +1,6 @@
 class Bus
 
-attr_reader(:number, :destination)
+attr_reader(:number, :destination, :passengers)
 
 def initialize(number, destination)
   @number = number
@@ -9,9 +9,16 @@ def initialize(number, destination)
 end
 
 def drive()
-
   return "Brum brum"
-
 end
 
+def how_many_passengers()
+  return @passengers.length
+end
+
+def pick_up(passenger)
+
+  @passengers.push(passenger)
+
+end
 end
